@@ -7,4 +7,5 @@ submit.addEventListener("click", () => {
    listItem.textContent = input.value;
    //console.log(listItem);
    list.appendChild(listItem);
+   input.value = "";
 })
