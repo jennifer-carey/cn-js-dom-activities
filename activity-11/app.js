@@ -17,3 +17,13 @@ removeBtn.addEventListener("click", () => {
    let list = document.getElementsByTagName("ul")[0];
    list.removeChild(listItem);
 })
+
+for (let listItem of listItems) {
+   listItem.addEventListener("mouseover", () => {
+      listItem.textContent = listItem.textContent.toUpperCase();
+   }); 
+
+   listItem.addEventListener("mouseout", () => {
+      listItem.textContent = listItem.textContent.toLowerCase();
+   });    
+}
