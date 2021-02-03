@@ -10,3 +10,10 @@ button.addEventListener("click", () => {
    list.appendChild(listItem);
    input.value = "";
 })
+
+removebtn.addEventListener("click", () => {
+   let lastItem = document.querySelector("#list li:last-child")
+   list.removeChild(lastItem);
+   // can also be written on one line
+   //list.removeChild(document.querySelector("#list li:last-child"));
+})
