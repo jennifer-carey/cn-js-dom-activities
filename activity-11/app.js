@@ -1,6 +1,7 @@
 const input = document.getElementById("input");
 const button = document.getElementById("submit");
 const removeBtn = document.getElementById("remove");
+const listItems = document.querySelectorAll("li");
 
 button.addEventListener("click", () => {
    let listItem = document.createElement("li");
